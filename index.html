@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Darth Vader</title>
+    <title>Rainbow Background Example</title>
+    <style>
+        body {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            /* For a repeating effect */
+            background-size: 1800% 100%;
+            animation: rainbowBackground 10s linear infinite;
+        }
+
+        @keyframes rainbowBackground {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        /* Other CSS styles for the content */
+        h1 {
+            text-align: center;
+            color: white; /* Ensuring the text is visible on the background */
+        }
+    </style>
 </head>
-
 <body>
-<b><i><u><h1>Hello There</h1></u></i></b>
+  <h1><b><i><u>Hello There</u></i></b></h1>
+    <p>This is an example of a rainbow background in HTML.</p>
 </body>
-
 </html>
